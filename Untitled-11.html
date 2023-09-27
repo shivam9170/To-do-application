@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .task-list {
+      background-color: #fff;
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 600px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .task-list h2 {
+      margin-bottom: 10px;
+    }
+
+    .task-list ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .task-list li {
+      margin-bottom: 5px;
+    }
+
+    .task-list label {
+      margin-left: 5px;
+    }
+
+    .edit-icon,
+    .delete-icon {
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
+    .create-task {
+      background-color: #fff;
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 600px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .create-task h2 {
+      margin-bottom: 10px;
+    }
+
+    .create-task input,
+    .create-task textarea {
+      display: block;
+      margin-bottom: 10px;
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    .create-task button {
+      padding: 5px 10px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .create-task button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>Task Dashboard</h1>
+
+  <div class="task-list">
+    <h2>Tasks</h2>
+    <ul>
+      <li>
+        <input type="checkbox" id="task1">
+        <label for="task1">Task 1</label>
+        <span class="edit-icon">&#9998;</span>
+        <span class="delete-icon">&#128465;</span>
+      </li>
+      <li>
+        <input type="checkbox" id="task2">
+        <label for="task2">Task 2</label>
+        <span class="edit-icon">&#9998;</span>
+        <span class="delete-icon">&#128465;</span>
+      </li>
+      <input type = "checkbox" id="task3">
+      <label for ="tack3">Task 3</label>
+      <span class ="edit-icon">&#9998;</span>
+      <span class ="delete-icon">&#128465;</span>
+
+    </ul>
+  </div>
+
+  <div class="create-task">
+    <h2>Create Task</h2>
+    <form>
+
+       
+      <input type="text" placeholder="Task name">
+      <textarea placeholder="Task description"></textarea>
+      <button type="submit">Create</button>
+    </form>
+  </div>
+</body>
+</html>
